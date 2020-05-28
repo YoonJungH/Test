@@ -9,12 +9,12 @@ way = 1      #방향 (증감처리)
 def recur(column,row,number,way,snail): 
     
     for a in range(1,snail + 1): 
-        number = number + 1 
+        number += 1 
         row = row + way
         data[column][row] = number  
     snail = snail - 1  
     for a in range(1,snail + 1): 
-        number = number + 1 
+        number += 1 
         column = column + way 
         data[column][row] = number     
     way = way * -1
