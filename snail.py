@@ -4,7 +4,7 @@ data = [[0] * snail for i in range(snail)]
 column = 0   #행(세로)
 row = -1     #열(가로)
 number = 0   #수
-way = 1      #방향
+way = 1      #방향 (증감처리)
 
 def recur(column,row,number,way,snail): 
     
@@ -25,3 +25,5 @@ def recur(column,row,number,way,snail):
 recur(column,row,number,way,snail)              #함수호출
 for column in range(snail):
     print(data[column])
+
+    #참고: https://blog.naver.com/lovysunny7/221614710502
